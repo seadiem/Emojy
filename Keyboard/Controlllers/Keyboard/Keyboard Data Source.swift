@@ -17,8 +17,9 @@ extension Keyboard {
 
 extension Keyboard: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width / 6
-        return CGSize(width: width, height: width)
+//        let width = UIScreen.main.bounds.width / 6 - 4
+        let height = collectionView.bounds.height / 2 - 2
+        return CGSize(width: height, height: height)
     }
 }
 

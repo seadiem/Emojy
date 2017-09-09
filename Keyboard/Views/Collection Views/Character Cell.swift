@@ -15,6 +15,7 @@ class PartCell: UICollectionViewCell {
         super.init(frame: frame)
         contentView.backgroundColor = UIColor.yellow
         contentView.addSubview(image)
+        image.contentMode = .scaleAspectFit
     }
     
     required init?(coder aDecoder: NSCoder) {
