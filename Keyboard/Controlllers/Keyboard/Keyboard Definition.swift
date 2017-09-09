@@ -13,6 +13,8 @@ class Keyboard: UICollectionViewController {
         layout.scrollDirection = .vertical
         layout.itemSize = CGSize(width: view.bounds.width / 2 - 4, height: view.bounds.width / 2 - 4)
         
+        collectionView?.register(PartCell.self, forCellWithReuseIdentifier: PartCell.reuseIdentifier)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

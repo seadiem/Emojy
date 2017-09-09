@@ -1,6 +1,6 @@
 import UIKit
 
-struct Character {
+struct Part {
     enum State {
         case nonselected
         case selected
@@ -19,20 +19,22 @@ struct Character {
     }
 }
 
-extension Character {
+extension Part {
     func setup() {
         layer.contents = image.cgImage!
         layer.frame = CGRect(x: 100, y: 100, width: image.size.width / 2, height: image.size.height / 2)
     }
 }
 
-extension Character: Equatable {
-    static func == (lhs: Character, rhs: Character) -> Bool {
+extension Part: Equatable {
+    static func == (lhs: Part, rhs: Part) -> Bool {
         return lhs.date == rhs.date
     }
 }
 
-extension Character: Hashable {
+extension Part: Hashable {
     var hashValue: Int { return date.hashValue }
 }
+
+extension Part: Imigable {}
 
