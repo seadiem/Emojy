@@ -14,6 +14,8 @@ class Keyboard: UICollectionViewController {
         layout.itemSize = CGSize(width: view.bounds.width / 2 - 4, height: view.bounds.width / 2 - 4)
         
         collectionView?.register(PartCell.self, forCellWithReuseIdentifier: PartCell.reuseIdentifier)
+        collectionView?.alwaysBounceHorizontal = true
+
         
         var bodyes = [Body]()
         for index in 1...4 {

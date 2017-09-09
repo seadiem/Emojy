@@ -95,8 +95,8 @@
 			children = (
 				88CC77B01F63FFCE005CA91D /* PartTemp.swift */,
 				88D9AEAE1F64504200C03A73 /* Part.swift */,
-				88CC77C31F6416BC005CA91D /* Imigable.swift */,
 				88D9AEAC1F64500A00C03A73 /* Partable.swift */,
+				88CC77C31F6416BC005CA91D /* Imigable.swift */,
 				88D9AEB01F6456F400C03A73 /* Body.swift */,
 				88D9AEB21F64570000C03A73 /* Hair.swift */,
 				88D9AEB41F64570800C03A73 /* Face.swift */,

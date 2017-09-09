@@ -36,5 +36,5 @@ extension PartTemp: Hashable {
     var hashValue: Int { return date.hashValue }
 }
 
-extension PartTemp: Imigable {}
+
 

@@ -1,3 +1,5 @@
+import Foundation
+
 struct KeyboardModel {
     var hairs: [Hair] = []
     var bodyes: [Body] = []
@@ -13,5 +15,14 @@ extension KeyboardModel {
         let c = clothes as [Imigable]
         let imagable: [Imigable] = h + b + f + c
         return imagable
+    }
+}
+
+extension KeyboardModel {
+    subscript(path: IndexPath) -> Imigable {
+        let s = imagable.sorted { (lhs, rhs) -> Bool in
+            return lhs.part < rhs.part
+        }
+        return s[path.item]
     }
 }

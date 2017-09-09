@@ -1,5 +1,5 @@
 import UIKit
 
-protocol Imigable {
+protocol Imigable: Partable {
     var image: UIImage { get }
 }
