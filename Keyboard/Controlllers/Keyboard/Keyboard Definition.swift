@@ -2,7 +2,7 @@ import UIKit
 
 class Keyboard: UICollectionViewController {
     
-
+    var model = KeyboardModel()
     
     let layout = UICollectionViewFlowLayout()
     
@@ -15,6 +15,13 @@ class Keyboard: UICollectionViewController {
         
         collectionView?.register(PartCell.self, forCellWithReuseIdentifier: PartCell.reuseIdentifier)
         
+        var bodyes = [Body]()
+        for index in 1...4 {
+            guard let image = UIImage(named: "body\(index)") else { continue }
+            let body = Body(image: image)
+            bodyes.append(body)
+        }
+        model.bodyes = bodyes
     }
     
     required init?(coder aDecoder: NSCoder) {

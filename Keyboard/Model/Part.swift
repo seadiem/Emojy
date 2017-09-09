@@ -1,40 +1,23 @@
-import UIKit
-
-struct Part {
-    enum State {
-        case nonselected
-        case selected
-    }
-    let image: UIImage
-    let layer: CALayer
-    var date: Date
-    var state: State
-    
-    init(image: UIImage) {
-        self.image = image
-        layer = CALayer()
-        date = Date()
-        state = .selected
-        setup()
-    }
+enum Part {
+    case body
+    case hair
+    case face
+    case clothes
 }
 
 extension Part {
-    func setup() {
-        layer.contents = image.cgImage!
-        layer.frame = CGRect(x: 100, y: 100, width: image.size.width / 2, height: image.size.height / 2)
+    var zaxis: Int {
+        switch self {
+        case .body: return 1
+        case .clothes: return 2
+        case .face: return 3
+        case .hair: return 4
+        }
     }
 }
 
-extension Part: Equatable {
-    static func == (lhs: Part, rhs: Part) -> Bool {
-        return lhs.date == rhs.date
+extension Part: Comparable {
+    static func <(lhs: Part, rhs: Part) -> Bool {
+        return lhs.zaxis < rhs.zaxis
     }
 }
-
-extension Part: Hashable {
-    var hashValue: Int { return date.hashValue }
-}
-
-extension Part: Imigable {}
-

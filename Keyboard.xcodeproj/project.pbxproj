@@ -10,7 +10,7 @@
 		88CC779C1F63FEB9005CA91D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC779B1F63FEB9005CA91D /* AppDelegate.swift */; };
 		88CC77A31F63FEB9005CA91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CC77A21F63FEB9005CA91D /* Assets.xcassets */; };
 		88CC77A61F63FEB9005CA91D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CC77A41F63FEB9005CA91D /* LaunchScreen.storyboard */; };
-		88CC77B11F63FFCE005CA91D /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77B01F63FFCE005CA91D /* Part.swift */; };
+		88CC77B11F63FFCE005CA91D /* PartTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77B01F63FFCE005CA91D /* PartTemp.swift */; };
 		88CC77B31F64001B005CA91D /* Keyboard Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77B21F64001B005CA91D /* Keyboard Definition.swift */; };
 		88CC77B51F640030005CA91D /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77B41F640030005CA91D /* Canvas.swift */; };
 		88CC77B71F640043005CA91D /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77B61F640043005CA91D /* Root.swift */; };
@@ -18,6 +18,13 @@
 		88CC77BF1F641185005CA91D /* Keyboard Data Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77BE1F641185005CA91D /* Keyboard Data Source.swift */; };
 		88CC77C11F6411DB005CA91D /* Character Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77C01F6411DB005CA91D /* Character Cell.swift */; };
 		88CC77C41F6416BC005CA91D /* Imigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77C31F6416BC005CA91D /* Imigable.swift */; };
+		88D9AEAB1F643D0200C03A73 /* KeyboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D9AEAA1F643D0200C03A73 /* KeyboardModel.swift */; };
+		88D9AEAD1F64500A00C03A73 /* Partable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D9AEAC1F64500A00C03A73 /* Partable.swift */; };
+		88D9AEAF1F64504200C03A73 /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D9AEAE1F64504200C03A73 /* Part.swift */; };
+		88D9AEB11F6456F400C03A73 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D9AEB01F6456F400C03A73 /* Body.swift */; };
+		88D9AEB31F64570000C03A73 /* Hair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D9AEB21F64570000C03A73 /* Hair.swift */; };
+		88D9AEB51F64570800C03A73 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D9AEB41F64570800C03A73 /* Face.swift */; };
+		88D9AEB71F64573100C03A73 /* Сlothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D9AEB61F64573100C03A73 /* Сlothes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +33,7 @@
 		88CC77A21F63FEB9005CA91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88CC77A51F63FEB9005CA91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88CC77A71F63FEB9005CA91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88CC77B01F63FFCE005CA91D /* Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
+		88CC77B01F63FFCE005CA91D /* PartTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartTemp.swift; sourceTree = "<group>"; };
 		88CC77B21F64001B005CA91D /* Keyboard Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard Definition.swift"; sourceTree = "<group>"; };
 		88CC77B41F640030005CA91D /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		88CC77B61F640043005CA91D /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
@@ -34,6 +41,13 @@
 		88CC77BE1F641185005CA91D /* Keyboard Data Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard Data Source.swift"; sourceTree = "<group>"; };
 		88CC77C01F6411DB005CA91D /* Character Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character Cell.swift"; sourceTree = "<group>"; };
 		88CC77C31F6416BC005CA91D /* Imigable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imigable.swift; sourceTree = "<group>"; };
+		88D9AEAA1F643D0200C03A73 /* KeyboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardModel.swift; sourceTree = "<group>"; };
+		88D9AEAC1F64500A00C03A73 /* Partable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partable.swift; sourceTree = "<group>"; };
+		88D9AEAE1F64504200C03A73 /* Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
+		88D9AEB01F6456F400C03A73 /* Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
+		88D9AEB21F64570000C03A73 /* Hair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hair.swift; sourceTree = "<group>"; };
+		88D9AEB41F64570800C03A73 /* Face.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
+		88D9AEB61F64573100C03A73 /* Сlothes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Сlothes.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +93,14 @@
 		88CC77AD1F63FF6F005CA91D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				88CC77B01F63FFCE005CA91D /* PartTemp.swift */,
+				88D9AEAE1F64504200C03A73 /* Part.swift */,
 				88CC77C31F6416BC005CA91D /* Imigable.swift */,
-				88CC77B01F63FFCE005CA91D /* Part.swift */,
+				88D9AEAC1F64500A00C03A73 /* Partable.swift */,
+				88D9AEB01F6456F400C03A73 /* Body.swift */,
+				88D9AEB21F64570000C03A73 /* Hair.swift */,
+				88D9AEB41F64570800C03A73 /* Face.swift */,
+				88D9AEB61F64573100C03A73 /* Сlothes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +144,7 @@
 		88CC77BA1F640151005CA91D /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				88D9AEAA1F643D0200C03A73 /* KeyboardModel.swift */,
 				88CC77B21F64001B005CA91D /* Keyboard Definition.swift */,
 				88CC77BE1F641185005CA91D /* Keyboard Data Source.swift */,
 			);
@@ -217,15 +238,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D9AEAB1F643D0200C03A73 /* KeyboardModel.swift in Sources */,
 				88CC779C1F63FEB9005CA91D /* AppDelegate.swift in Sources */,
 				88CC77C41F6416BC005CA91D /* Imigable.swift in Sources */,
 				88CC77BF1F641185005CA91D /* Keyboard Data Source.swift in Sources */,
+				88D9AEAF1F64504200C03A73 /* Part.swift in Sources */,
 				88CC77B31F64001B005CA91D /* Keyboard Definition.swift in Sources */,
-				88CC77B11F63FFCE005CA91D /* Part.swift in Sources */,
+				88CC77B11F63FFCE005CA91D /* PartTemp.swift in Sources */,
+				88D9AEB51F64570800C03A73 /* Face.swift in Sources */,
+				88D9AEB71F64573100C03A73 /* Сlothes.swift in Sources */,
+				88D9AEB11F6456F400C03A73 /* Body.swift in Sources */,
 				88CC77C11F6411DB005CA91D /* Character Cell.swift in Sources */,
+				88D9AEB31F64570000C03A73 /* Hair.swift in Sources */,
 				88CC77B51F640030005CA91D /* Canvas.swift in Sources */,
 				88CC77BD1F640186005CA91D /* Root Model.swift in Sources */,
 				88CC77B71F640043005CA91D /* Root.swift in Sources */,
+				88D9AEAD1F64500A00C03A73 /* Partable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
