@@ -26,3 +26,14 @@ extension KeyboardModel {
         return s[path.item]
     }
 }
+
+extension KeyboardModel {
+    mutating func changeModel(model: Imigable) {
+        switch model {
+        case let hair as Hair: if let index = self.hairs.index(of: hair) { self.hairs[index] = hair }
+        case let body as Body: if let index = self.bodyes.index(of: body) { self.bodyes[index] = body }
+        case let face as Face: if let index = self.hairs.index(of: hair) { self.hairs[index] = hair }
+        case let clothes as Clothes: if let index = self.hairs.index(of: hair) { self.hairs[index] = hair }
+        }
+    }
+}

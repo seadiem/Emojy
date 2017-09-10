@@ -22,3 +22,10 @@ extension Keyboard: UICollectionViewDelegateFlowLayout {
     }
 }
 
+extension Keyboard {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let model = self.model[indexPath]
+        print(model)
+    }
+}
+
