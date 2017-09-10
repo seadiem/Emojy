@@ -6,6 +6,8 @@ class Keyboard: UICollectionViewController {
     
     let layout = UICollectionViewFlowLayout()
     
+    var hadler: (([Imigable]) -> Void)?
+    
     init() {
         super.init(collectionViewLayout: layout)
         layout.minimumLineSpacing = 2

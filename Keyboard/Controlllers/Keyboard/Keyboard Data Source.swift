@@ -28,6 +28,7 @@ extension Keyboard {
         !model.selected
         self.model.changeModel(model: model)
         collectionView.reloadData()
+        hadler?(self.model.selected)
     }
 }
 

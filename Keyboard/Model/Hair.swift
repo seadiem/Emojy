@@ -14,7 +14,7 @@ struct Hair {
         self.image = image
         layer = CALayer()
         layer.contents = image.cgImage!
-        layer.frame = CGRect(x: 0, y: 0, width: image.size.width / 2, height: image.size.height / 2)
+        layer.frame = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
         hashValue = Hair.hash
         Hair.hash += 1
     }

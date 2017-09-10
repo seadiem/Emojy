@@ -37,10 +37,53 @@ extension KeyboardModel {
                 return out
             }
             if let index = self.hairs.index(of: hair) { self.hairs[index] = hair }
-        case let body as Body: if let index = self.bodyes.index(of: body) { self.bodyes[index] = body }
-        case let face as Face: if let index = self.faces.index(of: face) { self.faces[index] = face }
-        case let clothes as Clothes: if let index = self.clothes.index(of: clothes) { self.clothes[index] = clothes }
+        case let body as Body:
+            bodyes = bodyes.map{ body -> Body in
+                var out = body
+                out.selected = .free
+                return out
+            }
+            if let index = self.bodyes.index(of: body) { self.bodyes[index] = body }
+        case let face as Face:
+            faces = faces.map{ face -> Face in
+                var out = face
+                out.selected = .free
+                return out
+            }
+            if let index = self.faces.index(of: face) { self.faces[index] = face }
+        case let clothes as Clothes:
+            self.clothes = self.clothes.map{ cloth -> Clothes in
+                var out = cloth
+                out.selected = .free
+                return out
+            }
+            if let index = self.clothes.index(of: clothes) { self.clothes[index] = clothes }
         default: break
         }
     }
 }
+
+extension KeyboardModel {
+    var selected: [Imigable] {
+        let hf: [Imigable] = hairs.filter { $0.selected == .selected}
+        let bf: [Imigable] = bodyes.filter { $0.selected == .selected}
+        let cf: [Imigable] = clothes.filter { $0.selected == .selected}
+        let ff: [Imigable] = faces.filter { $0.selected == .selected}
+        let k = hf + bf + cf + ff
+        let s = k.sorted { (lhs, rhs) -> Bool in return lhs.part < rhs.part }
+        return s
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

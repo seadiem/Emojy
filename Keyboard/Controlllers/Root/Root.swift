@@ -17,6 +17,10 @@ class Root: UIViewController {
         addChildViewController(keyboard)
         view.addSubview(keyboard.view)
         keyboard.didMove(toParentViewController: self)
+        
+        keyboard.hadler = { [weak canvas] items in
+            canvas?.changeParts(parts: items)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
