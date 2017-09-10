@@ -14,7 +14,7 @@ struct Face {
         self.image = image
         layer = CALayer()
         layer.contents = image.cgImage!
-        layer.frame = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
+        layer.frame = CGRect(x: 0, y: 0, width: image.size.width * 1.6, height: image.size.height * 1.6)
         hashValue = Face.hash
         Face.hash += 1
     }

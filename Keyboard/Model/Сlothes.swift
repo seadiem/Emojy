@@ -10,11 +10,11 @@ struct Clothes {
     let layer: CALayer
     var selected = SelectStatus.free
     
-    init(image: UIImage) {
+    init(image: UIImage, full: UIImage) {
         self.image = image
         layer = CALayer()
-        layer.contents = image.cgImage!
-        layer.frame = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
+        layer.contents = full.cgImage!
+        layer.frame = CGRect(x: 0, y: 0, width: full.size.width * 1.6, height: full.size.height * 1.6)
         hashValue = Clothes.hash
         Clothes.hash += 1
     }

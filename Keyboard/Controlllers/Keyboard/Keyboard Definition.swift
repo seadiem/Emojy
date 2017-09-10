@@ -36,7 +36,8 @@ class Keyboard: UICollectionViewController {
         var clothes = [Clothes]()
         for index in 1...4 {
             guard let image = UIImage(named: "clothes\(index)") else { continue }
-            let cloth = Clothes(image: image)
+            guard let prev = UIImage(named: "clothesprev\(index)") else { continue }
+            let cloth = Clothes(image: prev, full: image)
             clothes.append(cloth)
         }
         model.clothes = clothes

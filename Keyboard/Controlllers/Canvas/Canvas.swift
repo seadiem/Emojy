@@ -9,7 +9,7 @@ class Canvas: UIViewController {
     init() {
         super.init(nibName: nil, bundle: nil)
         view.backgroundColor = UIColor.orange
-        canvas.backgroundColor = UIColor.gray
+        canvas.backgroundColor = UIColor.clear
         view.addSubview(canvas)
     }
     
@@ -21,7 +21,7 @@ class Canvas: UIViewController {
         super.viewWillLayoutSubviews()
         let width = view.bounds.width
         let height = view.bounds.height
-        let insets = UIEdgeInsets(top: height / 4, left: width / 4, bottom: height / 3 + 50, right: width / 4)
+        let insets = UIEdgeInsets(top: height / 8, left: width / 7, bottom: height / 3 + 50, right: width / 4)
         let rect = UIEdgeInsetsInsetRect(view.frame, insets)
         canvas.frame = rect
         

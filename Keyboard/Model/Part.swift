@@ -10,8 +10,8 @@ extension Part {
         switch self {
         case .body: return 1
         case .clothes: return 2
-        case .face: return 3
-        case .hair: return 4
+        case .face: return 4
+        case .hair: return 3
         }
     }
 }
