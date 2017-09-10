@@ -1,6 +1,10 @@
 import UIKit
 
 struct Clothes {
+    
+    static var hash = 0
+    let hashValue: Int
+    
     let part = Part.clothes
     let image: UIImage
     let layer: CALayer
@@ -11,7 +15,15 @@ struct Clothes {
         layer = CALayer()
         layer.contents = image.cgImage!
         layer.frame = CGRect(x: 0, y: 0, width: image.size.width / 2, height: image.size.height / 2)
+        hashValue = Clothes.hash
+        Clothes.hash += 1
     }
 }
 
 extension Clothes: Imigable {}
+
+extension Clothes: Equatable {
+    static func == (lhs: Clothes, rhs: Clothes) -> Bool {
+        return lhs.hashValue == rhs.hashValue
+    }
+}
