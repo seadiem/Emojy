@@ -8,6 +8,10 @@ class PartCell: UICollectionViewCell {
     var model: Imigable! {
         didSet {
             image.image = model.image
+            switch model.selected {
+            case .free: contentView.backgroundColor = UIColor.yellow
+            case .selected: contentView.backgroundColor = UIColor.cyan
+            }
         }
     }
     

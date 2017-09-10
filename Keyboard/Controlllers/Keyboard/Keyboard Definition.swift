@@ -46,6 +46,7 @@ class Keyboard: UICollectionViewController {
             bodyes.append(body)
         }
         model.bodyes = bodyes
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

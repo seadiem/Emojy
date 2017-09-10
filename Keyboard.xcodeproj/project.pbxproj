@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8800E8BC1F65636300253653 /* Selected Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8800E8BB1F65636300253653 /* Selected Status.swift */; };
 		88CC779C1F63FEB9005CA91D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC779B1F63FEB9005CA91D /* AppDelegate.swift */; };
 		88CC77A31F63FEB9005CA91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CC77A21F63FEB9005CA91D /* Assets.xcassets */; };
 		88CC77A61F63FEB9005CA91D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CC77A41F63FEB9005CA91D /* LaunchScreen.storyboard */; };
-		88CC77B11F63FFCE005CA91D /* PartTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77B01F63FFCE005CA91D /* PartTemp.swift */; };
 		88CC77B31F64001B005CA91D /* Keyboard Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77B21F64001B005CA91D /* Keyboard Definition.swift */; };
 		88CC77B51F640030005CA91D /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77B41F640030005CA91D /* Canvas.swift */; };
 		88CC77B71F640043005CA91D /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC77B61F640043005CA91D /* Root.swift */; };
@@ -28,12 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8800E8BB1F65636300253653 /* Selected Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Selected Status.swift"; sourceTree = "<group>"; };
 		88CC77981F63FEB9005CA91D /* Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88CC779B1F63FEB9005CA91D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88CC77A21F63FEB9005CA91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88CC77A51F63FEB9005CA91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88CC77A71F63FEB9005CA91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88CC77B01F63FFCE005CA91D /* PartTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartTemp.swift; sourceTree = "<group>"; };
 		88CC77B21F64001B005CA91D /* Keyboard Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard Definition.swift"; sourceTree = "<group>"; };
 		88CC77B41F640030005CA91D /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		88CC77B61F640043005CA91D /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		88CC77AD1F63FF6F005CA91D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				88CC77B01F63FFCE005CA91D /* PartTemp.swift */,
+				8800E8BB1F65636300253653 /* Selected Status.swift */,
 				88D9AEAE1F64504200C03A73 /* Part.swift */,
 				88D9AEAC1F64500A00C03A73 /* Partable.swift */,
 				88CC77C31F6416BC005CA91D /* Imigable.swift */,
@@ -244,7 +244,6 @@
 				88CC77BF1F641185005CA91D /* Keyboard Data Source.swift in Sources */,
 				88D9AEAF1F64504200C03A73 /* Part.swift in Sources */,
 				88CC77B31F64001B005CA91D /* Keyboard Definition.swift in Sources */,
-				88CC77B11F63FFCE005CA91D /* PartTemp.swift in Sources */,
 				88D9AEB51F64570800C03A73 /* Face.swift in Sources */,
 				88D9AEB71F64573100C03A73 /* Сlothes.swift in Sources */,
 				88D9AEB11F6456F400C03A73 /* Body.swift in Sources */,
@@ -252,6 +251,7 @@
 				88D9AEB31F64570000C03A73 /* Hair.swift in Sources */,
 				88CC77B51F640030005CA91D /* Canvas.swift in Sources */,
 				88CC77BD1F640186005CA91D /* Root Model.swift in Sources */,
+				8800E8BC1F65636300253653 /* Selected Status.swift in Sources */,
 				88CC77B71F640043005CA91D /* Root.swift in Sources */,
 				88D9AEAD1F64500A00C03A73 /* Partable.swift in Sources */,
 			);
